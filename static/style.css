@@ -1,0 +1,67 @@
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 20px 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #00ff9d;
+}
+
+textarea, input[type="password"], input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ff9d;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+}
+
+button {
+    background: #00ff9d;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.result {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    min-height: 20px;
+    word-break: break-all;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+.credit {
+    text-align: right;
+    color: #00ff9d;
+    font-size: 14px;
+    font-style: italic;
+    margin: 40px 20px 20px auto;
+}

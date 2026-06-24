@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SecureCrypt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to SecureCrypt</h1>
+        
+        <div class="section">
+            <h2>Text Encryption</h2>
+            <textarea id="text" placeholder="Enter text"></textarea>
+            <input type="password" id="key" placeholder="Enter key">
+            <div class="radio-group">
+                <input type="radio" name="mode" value="encrypt" checked> Encrypt
+                <input type="radio" name="mode" value="decrypt"> Decrypt
+            </div>
+            <button onclick="processText()">Submit</button>
+            <div id="result" class="result"></div>
+            <button onclick="copyResult()" id="copyBtn" style="display:none">Copy</button>
+        </div>
+
+        <div class="section">
+            <h2>Image Steganography</h2>
+            <input type="file" id="image" accept=".png,.bmp">
+            <textarea id="secret" placeholder="Secret message"></textarea>
+            <input type="password" id="imgKey" placeholder="Enter key">
+            <div class="radio-group">
+                <input type="radio" name="imgMode" value="encode" checked> Encode
+                <input type="radio" name="imgMode" value="decode"> Decode
+            </div>
+            <button onclick="processImage()">Submit</button>
+            <div id="imgResult" class="result"></div>
+        </div>
+    </div>
+    <div class="credit">By Haider Ali</div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
