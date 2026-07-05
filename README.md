@@ -9,6 +9,20 @@ A web-based application for secure encryption and decryption of text and images.
 - **Dark Mode UI** — Clean, modern interface built with HTML, CSS, and JavaScript.
 - **Downloadable Output** — Download the encoded image directly from the browser once a message is embedded.
 
+## Screenshots
+
+### Text Encryption & Decryption
+
+| Encryption | Decryption |
+|---|---|
+| ![Text Encryption](screenshots/text-encryption.png) | ![Text Decryption](screenshots/text-decryption.png) |
+
+### Image Steganography
+
+| Encode | Decode |
+|---|---|
+| ![Steganography Encode](screenshots/steganography-encode.png) | ![Steganography Decode](screenshots/steganography-decode.png) |
+
 ## Tech Stack
 
 | Category           | Technologies              |
@@ -28,8 +42,9 @@ SecureCrypt/
 ├── static/
 │   ├── style.css         # Dark theme stylesheet
 │   └── script.js         # Frontend interactivity
-└── templates/
-    └── index.html        # Main webpage template
+├── templates/
+│   └── index.html        # Main webpage template
+└── screenshots/           # README screenshots
 ```
 
 ## Installation & Usage
